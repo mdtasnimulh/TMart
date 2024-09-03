@@ -1,0 +1,211 @@
+[versions]
+androidGradlePlugin = "8.5.2"
+androidTools = "31.6.0"
+kotlin = "2.0.0"
+ksp = "2.0.0-1.0.21"
+googleServices = "4.4.2"
+androidDesugarJdkLibs = "2.1.1"
+
+androidxAppCompat = "1.7.0"
+androidxCore = "1.13.1"
+material = "1.12.0"
+androidxActivity = "1.9.1"
+fragmentVersion = "1.8.2"
+palette = "1.0.0"
+recyclerViewVersion = "1.3.2"
+cardViewVersion = "1.0.0"
+constraintlayout = "2.1.4"
+androidxCoreSplashscreen = "1.0.1"
+androidxDataStore = "1.1.1"
+
+hilt = "2.51.1"
+hiltExt = "1.2.0"
+hiltNavigationFragmentVersion = "1.2.0"
+
+room = "2.6.1"
+navigationVersion = "2.7.7"
+shimmer = "0.5.0"
+timberVersion = "5.0.1"
+coil = "2.6.0"
+glide = "4.16.0"
+sdpVersion = "1.1.0"
+lottieAnimation = "6.4.0"
+picassoVersion = "2.71828"
+swipeLayoutVersion = "1.1.0"
+dateced = "1.1.1"
+datePicker = "4.2.3"
+
+mapVersion = "19.0.0"
+mapLocationVersion = "21.3.0"
+mapPlaceVersion = "17.1.0"
+libraryPlaceVersion = "3.5.0"
+
+coroutinesVersion = "1.8.1"
+androidxLifecycle = "2.8.4"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+androidxEspresso = "3.6.1"
+testCore = "1.6.1"
+testRunner = "1.6.2"
+
+okhttp3Version = "4.12.0"
+retrofitVersion = "2.9.0"
+rxJava3Version = "3.1.8"
+rxAndroid3Version = "3.0.2"
+
+gsonVersion = "2.10.1"
+workVersion = "2.9.1"
+
+[libraries]
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
+android-gradle-plugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+androidx-palette = { module = "androidx.palette:palette", version.ref = "palette" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+room-gradlePlugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "room" }
+
+work = {  group = "androidx.work", name = "work-runtime-ktx", version.ref = "workVersion"}
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "androidxActivity" }
+androidx-fragment = {group = "androidx.fragment",name = "fragment-ktx", version.ref = "fragmentVersion"}
+androidx-viewmodel-ktx = {group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle"}
+androidx-viewmodel-save-state = {group = "androidx.lifecycle", name = "lifecycle-viewmodel-savedstate", version.ref = "androidxLifecycle"}
+androidx-livedata = {group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "androidxLifecycle"}
+androidx-lifecycle-runtime = {group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidxLifecycle"}
+androidx-lifecycle-service = {group = "androidx.lifecycle", name = "lifecycle-service", version.ref = "androidxLifecycle"}
+
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-recycler-view = {group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerViewVersion"}
+card-view = {group = "androidx.cardview", name = "cardview", version.ref = "cardViewVersion"}
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+sdp = {group = "com.intuit.sdp", name = "sdp-android", version.ref = "sdpVersion"}
+shimmer = { group = "com.facebook.shimmer", name="shimmer", version.ref = "shimmer" }
+ssp = {group = "com.intuit.ssp", name = "ssp-android", version.ref = "sdpVersion"}
+androidx-core-splashscreen = { group = "androidx.core", name = "core-splashscreen", version.ref = "androidxCoreSplashscreen" }
+androidx-dataStore-core = { group = "androidx.datastore", name = "datastore", version.ref = "androidxDataStore" }
+
+navigation-fragment = {group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationVersion"}
+navigation-ui = {group = "androidx.navigation", name = "navigation-ui-ktx" ,version.ref = "navigationVersion"}
+
+hilt-android = {group = "com.google.dagger", name = "hilt-android", version.ref = "hilt"}
+hilt-compiler = {group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt"}
+hilt-navigation = {group = "androidx.hilt", name = "hilt-navigation-fragment", version.ref = "hiltNavigationFragmentVersion"}
+hilt-ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltExt" }
+hilt-ext-work = { group = "androidx.hilt", name = "hilt-work", version.ref = "hiltExt" }
+
+kotlin-coroutines = {group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesVersion"}
+
+gson = {group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion"}
+timber = {group = "com.jakewharton.timber", name = "timber", version.ref = "timberVersion"}
+coil = {group = "io.coil-kt", name = "coil", version.ref = "coil"}
+lottie-animation = {group = "com.airbnb.android", name = "lottie", version.ref = "lottieAnimation"}
+picasso = {group = "com.squareup.picasso", name = "picasso", version.ref = "picassoVersion"}
+androidx-swipe-refresh = {group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swipeLayoutVersion"}
+dateced = {group = "com.github.kamrul3288", name = "dateced", version.ref = "dateced"}
+date-picker = {group = "com.wdullaer", name = "materialdatetimepicker", version.ref = "datePicker"}
+
+room-ktx = {group = "androidx.room", name = "room-ktx", version.ref = "room"}
+room-runtime = {group = "androidx.room", name = "room-runtime", version.ref = "room"}
+room-compiler = {group = "androidx.room", name = "room-compiler", version.ref = "room"}
+room-common = {group = "androidx.room", name = "room-common", version.ref = "room"}
+
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "mapVersion" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "mapLocationVersion" }
+play-services-places = { group = "com.google.android.gms", name = "play-services-places", version.ref = "mapPlaceVersion" }
+library-places = { group = "com.google.android.libraries.places", name = "places", version.ref = "libraryPlaceVersion" }
+
+lint-api = { group = "com.android.tools.lint", name = "lint-api", version.ref = "androidTools" }
+lint-checks = { group = "com.android.tools.lint", name = "lint-checks", version.ref = "androidTools" }
+lint-tests = { group = "com.android.tools.lint", name = "lint-tests", version.ref = "androidTools" }
+android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
+
+retrofit = {group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion"}
+retrofit-json-converter = {group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion"}
+okhttp = {group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3Version"}
+okhttp-intercepter = {group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3Version"}
+
+retrofit-rxjava3-adapter = {group = "com.squareup.retrofit2", name = "adapter-rxjava3", version.ref = "retrofitVersion"}
+rx-java3 = {group = "io.reactivex.rxjava3", name = "rxjava", version.ref = "rxJava3Version"}
+rx-java3-android = {group = "io.reactivex.rxjava3", name = "rxandroid", version.ref = "rxAndroid3Version"}
+
+test-junit = {group = "junit", name = "junit", version.ref="junit"}
+test-extjunit = {group = "androidx.test.ext", name = "junit", version.ref="junitVersion"}
+test-espresso = {group = "androidx.test.espresso", name = "espresso-core", version.ref="androidxEspresso"}
+test-core = {group = "androidx.test", name = "core", version.ref="testCore"}
+test-runner = {group = "androidx.test", name = "runner", version.ref="testRunner"}
+
+[bundles]
+androidx-core-dependencies = [
+    "androidx-appcompat",
+    "androidx-core-ktx",
+    "material",
+    "androidx-recycler-view",
+    "androidx-constraintlayout",
+    "card-view",
+    "androidx-activity",
+    "androidx-fragment",
+]
+play-services-maps = [
+    "play-services-maps",
+    "play-services-location",
+    "play-services-places",
+    "library-places"
+]
+androidx-lifecycle-dependencies = [
+    "androidx-viewmodel-ktx",
+    "androidx-viewmodel-save-state",
+    "androidx-livedata",
+    "androidx-lifecycle-runtime",
+    "androidx-lifecycle-service",
+]
+room-dependencies = [
+    "room-ktx",
+    "room-runtime",
+]
+network-dependencies = [
+    "retrofit",
+    "retrofit-rxjava3-adapter",
+    "retrofit-json-converter",
+    "okhttp",
+    "okhttp-intercepter",
+    "gson",
+]
+rxjava3-dependencies = [
+    "rx-java3",
+    "rx-java3-android",
+]
+androidx-navigation-dependencies = [
+    "navigation-fragment",
+    "navigation-ui",
+    "hilt-navigation"
+]
+android-responsive-size-dependencies = [
+    "sdp",
+    "ssp"
+]
+
+[plugins]
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+room = { id = "androidx.room", version.ref = "room" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+navigation-safeargs = { id = "androidx.navigation.safeargs", version.ref = "navigationVersion" }
+
+# Plugins defined by this project
+tmart-android-application = { id = "tmart.android.application", version = "unspecified" }
+tmart-android-feature = { id = "tmart.android.feature", version = "unspecified" }
+tmart-android-hilt = { id = "tmart.android.hilt", version = "unspecified" }
+tmart-android-library = { id = "tmart.android.library", version = "unspecified" }
+tmart-android-lint = { id = "tmart.android.lint", version = "unspecified" }
+tmart-android-navigation = { id = "tmart.android.navigation", version = "unspecified" }
+tmart-android-room = { id = "tmart.android.room", version = "unspecified" }
+tmart-jvm-library = { id = "tmart.jvm.library", version = "unspecified" }
